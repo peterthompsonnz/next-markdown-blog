@@ -30,7 +30,11 @@ export default function Layout({ children, pageTitle, ...props }) {
         }
         a, a:visited {
           color: rgb(0, 109, 221);
-        }       
+        }         
+        img {
+        	border-radius: 6px;
+        	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.35);
+        }     
             
       `}</style>
       <style jsx>{`        
