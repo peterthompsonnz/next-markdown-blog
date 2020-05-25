@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from './Header'
+import Footer from './Footer'
 
 export default function Layout({ children, pageTitle, ...props }) {
   return (
@@ -14,26 +15,25 @@ export default function Layout({ children, pageTitle, ...props }) {
         {children}        
         </div>
       </section>
-      <footer><span>&copy; PeterT 2020 - Built using Next</span></footer>
+      <Footer />
       <style jsx global>{`
+        * {
+          box-sizing: border-box;
+        }
         body {                     
           font-family: helvetica, arial, sans-serif;
-          font-size: 1.25rem;
+          font-size: 1.15rem;
           margin: 0;
           line-height: 1.6;
           background-color: #fafafa;
           color: rgb(51, 51, 51);
         }        
-        .layout {            
-          margin: 0 auto;
-          max-width: 768px;
-        }
-        a, a:visited {
+        a, a:link {
           color: rgb(0, 109, 221);
         }         
         img {
-        	border-radius: 6px;
-        	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.35);
+          border-radius: 6px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.35);
         }     
             
       `}</style>
@@ -41,21 +41,8 @@ export default function Layout({ children, pageTitle, ...props }) {
         .layout {            
           margin: 0 auto;
           max-width: 768px;
-        }
-        footer {          
-          width: 100%;             
-          display: flex;
-          justify-content: center;
-          padding-bottom: 20px;
-          margin-top: 60px;
-        }
-        footer span {
-          display: inline-block;
-          font-size: 0.85em;          
-          border-top: 1px solid rgb(51, 51, 51);
-          padding-top: 10px;    
+          padding: 0 20px;
         }        
-        
       `}</style>
     </>
   )
