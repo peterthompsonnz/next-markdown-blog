@@ -32,6 +32,8 @@ export default function Layout({ children, pageTitle, ...props }) {
           color: rgb(0, 109, 221);
         }         
         img {
+          max-width: 100%;
+          height: auto;
           border-radius: 6px;
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.35);
         }     
