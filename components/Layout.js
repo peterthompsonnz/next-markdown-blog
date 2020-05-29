@@ -36,8 +36,17 @@ export default function Layout({ children, pageTitle, ...props }) {
           height: auto;
           border-radius: 6px;
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.35);
-        }     
-            
+        }   
+        pre {
+        	background-color: #eee;
+        	color: #000;
+        	padding: 20px;
+        	border-radius: 6px;
+        	border: 1px solid #aaa;
+        	font-size: 80%;
+        	font-family: monospace;
+        	box-shadow: 0 2px 4px rgba(0,0,0,0.26);
+        }         
       `}</style>
       <style jsx>{`        
         .layout {            
