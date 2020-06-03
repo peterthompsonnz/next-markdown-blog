@@ -29,8 +29,13 @@ export default function Layout({ children, pageTitle, ...props }) {
           color: rgb(51, 51, 51);
         }        
         a, a:link {
-          color: rgb(0, 109, 221);
-        }         
+          color: rgb(0,161,225);
+          text-decoration: none;  
+          border-bottom: 2px solid transparent;        
+        }    
+        a:hover {
+        	border-bottom: 2px solid rgb(0,161,225);
+        }     
         img {
           max-width: 100%;
           height: auto;

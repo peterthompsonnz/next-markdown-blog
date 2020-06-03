@@ -20,19 +20,19 @@ export default function Header() {
           align-items: center;
           width: 100%;
           padding: 0;                
-          background-color: rgb(51, 51, 51);;
-          color: #fafafa;          
+          background-color: rgb(51, 51, 51);                    
         }
         .header a {
           display: inline-block;
-          color: rgb(80, 200, 251);
+          color: rgb(0,191,255);
           text-decoration: none;
           padding: 10px 20px;
           margin-right: 20px;
           font-size: 1.25em;
+          border-bottom: 2px solid transparent;
         }
         .header a:hover {
-          color: rgb(255, 255, 255);
+          color: rgb(255, 255, 255);          
         }  
       `}</style>
       </header>
