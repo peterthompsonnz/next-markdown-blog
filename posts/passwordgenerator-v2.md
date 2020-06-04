@@ -1,7 +1,7 @@
 ---
-title: 'Password Generator app - V2'
+title: 'Password Generator app - Version 2'
 author: 'PeterT'
-date: '24/05/2020'
+date: '2020/05/24'
 ---
 
 ![Password generator screenshot version 2](/static/password_generator/password-generator-v2.png)

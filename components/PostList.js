@@ -3,12 +3,17 @@ import Link from 'next/link'
 export default function PostList({ posts }) {
   if (posts === 'undefined') return null
 
+  // Sort posts in descending date order
+  const sortedPosts = posts.sort((a, b) => {  
+    return new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+  })
+
   return (
     <div>
-      {!posts && <div>No posts!</div>}
+      {!sortedPosts && <div>No posts!</div>}
       <ul>
-        {posts &&
-          posts.map((post) => {
+        {sortedPosts &&
+          sortedPosts.map((post) => {
             return (
               <li key={post.slug}>
                 <Link href={{ pathname: `/post/${post.slug}` }}>
